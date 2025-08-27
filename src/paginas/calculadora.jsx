@@ -1,25 +1,31 @@
+import { useState } from "react";
 import "./calculadora.css";
 
 function Calculadora() {
+  const [numero, setNumero] = useState("0"); // estado inicial
+
+  // Função para adicionar número ao display
+  const adicionarNumero = (valor) => {
+    if (numero === "0") {
+      setNumero(valor);
+    } else {
+      setNumero(numero + valor);
+    }
+  };
+
   return (
     <div className="corpoCalculadora">
       <div>
-        <p className="inputNumero">1203</p>
+        {/* Display */}
+        <p className="inputNumero">{numero}</p>
+
+        {/* Grid de botões */}
         <ul className="conteudoOpcoes">
-          <li>0</li>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-          <li>9</li>
-          <li>+</li>
-          <li>-</li>
-          <li>/</li>
-          <li>*</li>
+          {["0","1","2","3","4","5","6","7","8","9","+","-","/","*"].map((item) => (
+            <li key={item} onClick={() => adicionarNumero(item)}>
+              {item}
+            </li>
+          ))}
         </ul>
       </div>
     </div>

@@ -1,7 +1,7 @@
 .corpoCalculadora {
   background-color: rgb(179, 218, 218);
   width: 300px;
-  padding: 50px;
+  padding: 30px;
   margin: 30px;
   display: flex;
   flex-direction: column; /* empilha input e lista */
@@ -13,6 +13,7 @@
 .inputNumero {
   background-color: white;
   width: 100%;
+  padding: 0px 10px 0px 10px;
   border-radius: 10px;
   text-align: end;
   font-size: 40px;
@@ -38,5 +39,9 @@
   align-items: center;
   border-radius: 8px;
   height: 40px;
- 
+  
+}
+
+.conteudoOpcoes li:active{
+    background-color: pink;
 }
