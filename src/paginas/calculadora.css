@@ -1,0 +1,42 @@
+.corpoCalculadora {
+  background-color: rgb(179, 218, 218);
+  width: 300px;
+  padding: 50px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column; /* empilha input e lista */
+  justify-content: flex-start; /* começa do topo */
+  align-items: center;
+  border-radius: 20px;
+}
+
+.inputNumero {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  text-align: end;
+  font-size: 40px;
+  margin: 0;
+}
+
+.conteudoOpcoes {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4,60px);
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.conteudoOpcoes li {
+  background-color: #ffffff;
+  border: 1px solid rgb(41, 7, 7);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  height: 40px;
+ 
+}
