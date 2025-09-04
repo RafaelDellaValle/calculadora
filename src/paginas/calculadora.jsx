@@ -21,12 +21,14 @@ function Calculadora() {
 
         {/* Grid de botões */}
         <ul className="conteudoOpcoes">
-          {["0","1","2","3","4","5","6","7","8","9","+","-","/","*"].map((item) => (
+          {["7","8","9","AC","4","5","6","/","1","2","3","*","0",".","=","-"].map((item) => (
             <li key={item} onClick={() => adicionarNumero(item)}>
               {item}
             </li>
           ))}
+
         </ul>
+        
       </div>
     </div>
   );
